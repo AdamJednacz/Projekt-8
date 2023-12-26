@@ -1,0 +1,88 @@
+.home {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: rgb(151,117,250);
+  background: radial-gradient(circle, rgba(151,117,250,0.8435749299719888) 62%, rgba(247,75,151,0.3981967787114846) 85%);  .container {
+    display: flex;
+    justify-content: space-evenly;
+    img {
+      width: 40%;
+      border-radius: 1em;
+    }
+
+    .home_start {
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 1em;
+      padding: 3em;
+      h1{
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 2em 0;
+      }
+      .home_socialmedia_login {
+        display: flex;
+        flex-direction: column;
+        gap:1em;
+
+        .home_socialmedia_login_btn {
+          border: none;
+          color: #ffffff;
+          font-size:1.8rem ;
+          width: 16em;
+          height: 2.5em;
+          border-radius:0.5em ;
+          transition: transform 0.5s ease;
+          &:first-of-type{
+            background-color:#4267B2 ;
+          }
+          &:nth-of-type(2){
+            background-color: #1DA1F2;
+          }
+          &:nth-of-type(3){
+            background-color: #EA4335;
+            margin-bottom: 5em;
+          }
+          &:hover{
+            filter: brightness(1.2);
+            transform: scale(1.02);
+          }
+          .icon{
+            margin-right:0.5em ;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #8F959E;
+        margin-bottom: 2em;
+        a{
+          color: #1D1E20;
+          font-weight: bold;
+        }
+      }
+
+      button {
+        background-color: #9775FA;
+        border: none;
+        color: #ffffff;
+        font-size:1.8rem ;
+        width: 16em;
+        height: 2.5em;
+        border-radius:0.5em ;
+        transition: transform 0.5s ease;
+        &:hover{
+          filter: brightness(1.2);
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+}
