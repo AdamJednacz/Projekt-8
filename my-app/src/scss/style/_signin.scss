@@ -1,0 +1,49 @@
+.home_signin {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em;
+  padding: 3em;
+  .sigin_icon{
+    color: #000000;
+    font-size: 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2em 0;
+  }
+  .home_signin_form {
+    display: flex;
+    flex-direction: column;
+    .home_signin_form_label{
+      font-size: 1.2rem;
+      color: #8F959E;
+      margin:0.5em 0 ;
+
+    }
+    .home_signin_form_input{
+     border:none ;
+     border-bottom: 2px #8F959E solid;
+     padding: 1em;
+     font-size:1.2rem ;
+      margin-bottom: 1em;
+    }
+    .home_signin_form_btn {
+      background-color: #9775FA;
+      border: none;
+      color: #ffffff;
+      font-size: 1.8rem;
+      width: 16em;
+      height: 2.5em;
+      border-radius: 0.5em;
+      transition: transform 0.5s ease;
+      margin: 5.12em 0 1.12em 0;
+      &:hover {
+        filter: brightness(1.2);
+        transform: scale(1.02);
+      }
+    }
+  }
+}
