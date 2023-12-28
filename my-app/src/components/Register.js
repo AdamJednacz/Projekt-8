@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
+import { useSpring, animated, config } from 'react-spring';
 const Register = ({ setDisplayStart, setDisplayRegister }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [passwordMatchError, setPasswordMatchError] = useState(false);
+
+    const fadeIn = useSpring({
+        opacity: setDisplayRegister ? 1 : 0,
+        from: { opacity: 0 },
+        config: config.slow
+    });
 
     const GoToStart = () => {
         setDisplayRegister(false);
@@ -30,7 +36,7 @@ const Register = ({ setDisplayStart, setDisplayRegister }) => {
     }
 
     return (
-        <section id="register" className="register">
+        <animated.section id="register" className="register" style={fadeIn}>
             <div className="home_register">
                 <FontAwesomeIcon className="register_icon" icon={faArrowLeft} onClick={GoToStart} />
                 <h1>Register</h1>
@@ -63,7 +69,7 @@ const Register = ({ setDisplayStart, setDisplayRegister }) => {
                     <button className="home_register_form_btn" style={{ marginBottom: passwordMatchError ? '0.4em' : '0.95em' }}>Sign up</button>
                 </form>
             </div>
-        </section>
+        </animated.section>
     );
 };
 

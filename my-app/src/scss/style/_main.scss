@@ -1,0 +1,68 @@
+.main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0;
+  animation: fadeIn 0.7s ease-in-out forwards; /* Dodaj animację fadeIn */
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .main_icons{
+    position: relative;
+    width: 5%;
+    height: 50%;
+    border-radius: 3em;
+    background-color: #ffffff;
+    border: 2px solid red;
+    align-self: center;
+    left: 4em;
+  }
+  .main_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: #ffffff;
+    border: 2px solid red;
+    .main_searchbar{
+      width: 50%;
+      height: 10%;
+      background-color: #ffffff;
+      border: 2px solid red;
+    }
+    .main_choose_brand{
+      width:40%;
+      height: 20%;
+      background-color: #ffffff;
+      border: 2px solid red;
+    }
+    .main_new{
+      width: 90%;
+      height: 50%;
+      background-color: #ffffff;
+      border: 2px solid red;
+    }
+  }
+  .main_profil_and_cart{
+    width: 12.5%;
+    height: 10%;
+    background-color: #ffffff;
+    border: 2px solid red;
+    border-radius: 3em;
+    position: relative;
+    right: 4em;
+    top: 10em;
+
+  }
+
+}
