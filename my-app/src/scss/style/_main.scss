@@ -1,4 +1,5 @@
 .main {
+  font-family: 'Inter', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -19,12 +20,16 @@
   .main_icons{
     position: relative;
     width: 5%;
-    height: 50%;
+    height: 30%;
     border-radius: 3em;
     background-color: #ffffff;
     border: 2px solid red;
     align-self: center;
-    left: 4em;
+    left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 2em;
   }
   .main_main{
     display: flex;
@@ -39,9 +44,12 @@
       height: 10%;
       background-color: #ffffff;
       border: 2px solid red;
+      .main_searchbar_input{
+
+      }
     }
     .main_choose_brand{
-      width:40%;
+      width:60%;
       height: 20%;
       background-color: #ffffff;
       border: 2px solid red;
@@ -53,16 +61,27 @@
       border: 2px solid red;
     }
   }
-  .main_profil_and_cart{
-    width: 12.5%;
+  .main_profil{
+    width: auto;
     height: 10%;
     background-color: #ffffff;
     border: 2px solid red;
     border-radius: 3em;
     position: relative;
     right: 4em;
-    top: 10em;
+    top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    padding: 0 0.5em;
+    p{
+      margin: 0 0.5em;
+    }
+    .main_profil_menu{
+      display: none;
 
+    }
   }
 
 }
