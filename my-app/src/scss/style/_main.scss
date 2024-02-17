@@ -17,20 +17,6 @@
       opacity: 1;
     }
   }
-  .main_icons{
-    position: relative;
-    width: 5%;
-    height: 30%;
-    border-radius: 3em;
-    background-color: #ffffff;
-    border: 2px solid red;
-    align-self: center;
-    left: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 2em;
-  }
   .main_main{
     display: flex;
     flex-direction: column;
@@ -39,49 +25,5 @@
     width: 50%;
     background-color: #ffffff;
     border: 2px solid red;
-    .main_searchbar{
-      width: 50%;
-      height: 10%;
-      background-color: #ffffff;
-      border: 2px solid red;
-      .main_searchbar_input{
-
-      }
-    }
-    .main_choose_brand{
-      width:60%;
-      height: 20%;
-      background-color: #ffffff;
-      border: 2px solid red;
-    }
-    .main_new{
-      width: 90%;
-      height: 50%;
-      background-color: #ffffff;
-      border: 2px solid red;
-    }
   }
-  .main_profil{
-    width: auto;
-    height: 10%;
-    background-color: #ffffff;
-    border: 2px solid red;
-    border-radius: 3em;
-    position: relative;
-    right: 4em;
-    top: 5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    padding: 0 0.5em;
-    p{
-      margin: 0 0.5em;
-    }
-    .main_profil_menu{
-      display: none;
-
-    }
-  }
-
 }

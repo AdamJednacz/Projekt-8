@@ -1,0 +1,56 @@
+
+
+.main_choose_brand {
+  width: 90%;
+  height: 30%;
+  background-color: #F5F6FA;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 2em;
+  h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+  .main_choose_brand_brand {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .slick-arrow{
+      color: grey;
+      width: 50px;
+      height: 50px;
+      z-index: 1;
+    }
+    .slick-prev{
+      right: 3em;
+    }
+  .slick-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .main_choose_brand_brand_container {
+      display: none;
+
+      .brand_icon {
+        width: 10em; /* Zmieniamy szerokość obrazu na 100px (możesz dostosować tę wartość) */
+        aspect-ratio: 3/2; /* Zachowujemy proporcje obrazu */
+        object-fit: contain;
+        padding: 1em;
+      }
+      p{
+        text-align: center;
+        margin: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

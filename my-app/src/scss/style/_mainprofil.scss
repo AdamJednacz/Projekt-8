@@ -1,0 +1,21 @@
+.main_profil{
+  width: 15%;
+  height: 10%;
+  background-color: #F5F6FA;
+  border-radius: 3em;
+  position: relative;
+  right: 4em;
+  top: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2em;
+  padding: 0 0.5em;
+  p{
+    margin: 0 0.5em;
+  }
+  .main_profil_menu{
+    display: none;
+
+  }
+}

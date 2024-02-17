@@ -41,6 +41,14 @@ const Register = ({ setDisplayStart, setDisplayRegister }) => {
                 <FontAwesomeIcon className="register_icon" icon={faArrowLeft} onClick={GoToStart} />
                 <h1>Register</h1>
                 <form className="home_register_form" onSubmit={handleSignUp}>
+                    <label className="home_register_form_label">Name</label>
+                    <input
+                        className="home_register_form_input"
+                        type="name"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
                     <label className="home_register_form_label">E-mail</label>
                     <input
                         className="home_register_form_input"
