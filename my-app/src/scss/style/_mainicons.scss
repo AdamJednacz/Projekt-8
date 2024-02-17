@@ -20,38 +20,73 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Usunięcie transformacji */
+  transition: background-color 0.3s ease, color 0.3s ease;
   z-index: 2;
-  .main_icons_icon_item {
-    padding: 1em;
-    transition: transform 0.3s ease;
-    &:hover {
-      transform: scale(1.3); /* Powiększenie ikony po najechaniu */
-    }
-  }
-  .icon_text {
-    position: absolute;
-    top: 50%;
-    left: 100%; /* Zmiana wartości na 100% */
-    transform: translateY(-50%);
+}
+
+.main_icons_icon_item {
+  padding: 1em;
+  transition: transform 0.3s ease;
+}
+
+.main_icons_icon_container:hover .main_icons_icon_item {
+  transform: scale(1.3); /* Powiększenie ikony po najechaniu */
+}
+
+.icon_text {
+  display:none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+  padding: 0.75em 1.25em;
+  background-color: #F5F6FA;
+  border-radius: 0 3em 3em 0;
+  z-index: 0;
+  text-align: center;
+  white-space: nowrap;
+  animation: slideIn 0.5s forwards; /* Użycie animacji slideIn */
+}
+
+@keyframes slideIn {
+  0% {
+    left: 0%;
     opacity: 0;
-    transition: opacity 0.3s ease, left 0.3s ease;
-    padding: 0.75em 1.5em;
-    background-color: #F5F6FA;
-    border-radius: 0 3em 3em 0;
-    z-index: 0;
-    text-align: center;
+  }
+  30%{
+    opacity: 0;
+  }
+  100% {
+    left: 100%;
+    opacity: 1;
   }
 }
 
-
-
-
-  .main_icons_icon_container:hover .icon_text {
-    color: black; /* Zmiana koloru tekstu po najechaniu */
-    font-weight: bold;
+@keyframes slideOut {
+  0% {
+    left: 100%;
     opacity: 1;
-    left: calc(100% + 10px); /* Przesunięcie tekstu po najechaniu */
-    background-color: #F5F6FA; /* Zmiana koloru tła po najechaniu */
+    display: block;
   }
+  30%{
+    opacity: 0;
+  }
+  100% {
+    left: 0%;
+    opacity: 0;
+    display: none;
+  }
+}
 
+.main_icons_icon_container:hover .icon_text {
+  animation: slideIn 0.7s forwards; /* Użycie animacji slideIn */
+  font-weight: bold;
+  display: block;
+}
+
+.main_icons_icon_container:not(:hover) .icon_text {
+  animation: slideOut 0.7s forwards; /* Użycie animacji slideOut */
+  font-weight: bold;
+
+}
